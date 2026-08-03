@@ -33,3 +33,53 @@ application -> system -> host -> network...
 - 安全作为一种事后诸葛
 - 安全与可用性的抉择
 
+__质量与安全__
+通过质量认证不等于软件是安全的，但是安全的软件一般来说质量应该也是不错的。
+
+__安全轮廓，是什么让软件安全？__
+- 全生命周的考量，安全需求，安全设计，安全实现与编码，安全测试，安全验证，安全验收，安全部署/运营/终止，安全供应链
+- 安全概念
+   - 核心安全（confidential, integrity, availaibility, authentication, authrization, accountibility）
+   - 设计安全原则（least privilidge, separation of duties, defence in depth, fail secure, open design）
+
+
+__风险管理__
+
+
+__安全策略__
+策略从高层面制定了什么需要保护以及系统中存在的不利影响，策略包括：
+- 资产列表
+- 组织的目标
+- 法规和监管需求（GRC, governance, regulatory, compliance）
+
+__安全标准__
+分为：
+internal（coding standard）
+external
+- industry
+- international
+- national
+- goverment
+
+__最佳经验__
+OPEN WEB APPLICATION SECURITY PROJECT(OWASP)
+- OWASP TOP 10
+- DEVELOPMENT GUIDE
+- CODE REVIEW GUIDE
+- test guide
+
+__软件保证方法__
+- 苏格拉底方法（是一种通过不断提问来引导他人思考、分析和发现答案的方法，而不是直接告诉对方答案）
+- Six Sigma (6 σ)
+■■ DMAIC (Define, Measure, Analyze, Improve and Control) –
+which is used for incremental improvement of existing processes
+that are below Six Sigma quality and
+■■ DMADV (Define, Measure, Analyze, Design and Verify) – which
+is used to develop new processes for Six Sigma products and
+services. It can also be used for new versions of the product or
+service when the extent of changes are substantially greater than
+what incremental improvements can address.
+
+__Regulatory, Privacy, Compliance__
+
+
