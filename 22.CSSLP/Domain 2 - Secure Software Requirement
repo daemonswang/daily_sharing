@@ -81,14 +81,58 @@ user cases
 - storage
 
 ¤¤ Integrity requirements
+INCL.
+reliability assurance
+- it should be system and data integrity and mainly ensure system and software is functioning as it designed and expected to.
+protection or prevention against unauthorized modification
+- input validation
+- CRC
+- Hashing
+- parity bit checking
+soem examples:
+- all input form and querystring inputs need to be validated against a set of allowable inputs before the software accepts it for processing
+- software that is published should provided the recipient with a computed checksum and the hash function used to compute the checksum, so that the recipient can validate its accuracy and completenness
+- all non-human actors such as system and batch processes need to be identified, monitored and prevented from altering data as it passes on systems that they run on, unless explicitly authorized to.
+
 ¤¤ Availability requirements
+ensure no downtime and shortent the time, e.g. MTD, RTO, both of them should be determined in SLA
+INCL.
+- Redundant
+- Replicable
+- Cluster
+- Load balance
+
 ¤¤ Authentication requirements
+common form of authentication:
+■■ Anonymous
+■■ Basic
+■■ Digest
+■■ Integrated
+■■ Client certificates
+■■ Forms
+■■ Token
+■■ Smart cards
+■■ Biometrics
+
 ¤¤ Authorization requirements
+
 ¤¤ Accountability requirements
+- the identity of the subject (user or process) performing an action (who)
+- the action (what)
+- the object on which the action was performed (where)
+- the timestamp of the action (when)
+
 ■■ General Requirements
 ¤¤ Session Management requirements
+examples:
+- each user activity will need to be uniquely tracked
+- the user should not be required to provided user credential once authenticated within the internet banking application
+- session must be explicitly abandoned when the user logs off or closes the brower window
+
 ¤¤ Errors & Exceptions Management requirements
+
 ¤¤ Configuration Parameters Management requirements
+
 ■■ Operational Requirements
 ¤¤ Deployment Environment requirements
 ¤¤ Archiving requirements
