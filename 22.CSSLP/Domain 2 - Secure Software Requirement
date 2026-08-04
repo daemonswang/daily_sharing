@@ -134,9 +134,55 @@ examples:
 ¤¤ Configuration Parameters Management requirements
 
 ■■ Operational Requirements
+one must have an operational mindset and start with the Concept of Operations (CONOPS) and then delve into how the software will operate for the users
+
+examples:
+- cryptographic keys that are shared between applications should be protected and maintained using strict access controls
+- data backup and replication must be protected in secure logs with least privilidge implemented
+- patching must follow the enterprise process and change to production must be done only after all necessary approvals have been granted
+
 ¤¤ Deployment Environment requirements
+Some important questions to have answered include:
+ Will the software be deployed in an Internet, Extranet or intranet environment?
+ Will the software be hosted in a Demilitarized Zone (DMZ)?
+ What ports and protocols are available for use?
+ What privileges will be allowed in the production environment?
+ Will the software be transmitting sensitive or confidential information?
+ Will the software be load balanced and how is clustering architected?
+ Will the software be deployed in a web farm environment?
+ Will the software need to support single sign-on (SSO) authentication?
+ Can we leverage existing operating system event logging for auditing purposes?
+
 ¤¤ Archiving requirements
+x Where will the data or information be stored?
+x Will it be in a transactional system that is remote and online or will it be in offline storage media?
+x How much space do we need in the archival system?
+x How do we ensure that the media is not re-writable? For example, it is better to store archives in Read-Only media instead of Read-Write media.
+x How fast will we need to be able to retrieve from archives when
+needed? This will not only help in answering the online or offline
+storage location question but also help with determining the type
+of media to use. For example, for a situation when fast retrieval of
+archived data is necessary, archives in tape media is not advisable
+because retrieval is sequential and time consuming in tape media.
+x How long will we need to store the archives for?
+x Is there a regulatory requirement to store the data for a set period of time?
+x Is our archival retention policy contradictory to any compliance or regulatory requirements?
+x In what format will the data or information be stored? Clear text or cipher text?
+x If the data or information is stored in cipher text, how is this
+accomplish and are there management processes in place that will
+ensure proper retrieval?
+
 ¤¤ Anti-piracy requirements
+x “The software must be digitally signed to protect against tampering
+and reverse engineering.”
+x “The code must be obfuscated, if feasible, to deter the duplication
+of code.”
+x “License keys must not be statically hard-coded in the software
+binaries as they can be disclosed by debugging and disassembly.”
+x “License verification checks must be dynamic, preferably with
+phone-home mechanisms and not be dependent on factors that
+the end-user can change.”
+
 ■■ Other Requirements
 ¤¤ Sequencing and Timing requirements
 ¤¤ International requirements
