@@ -1,1 +1,99 @@
+安全软件所需要具备的属性：
+- 可靠性（reliability)
+- 韧性（resiliency）
+- 可恢复性（recoverability）
 
+安全需求常常被忽视，由于预算，由于在管理者看来似乎安全的改善没有给业务带来明显的收益等。
+
+在需求阶段明确安全的软件需求是绝对必要的，而且越早完成需要的力气及成本越少，越往后代价会成倍的或者指数级的增加。
+
+topics
+■■ Policy Decomposition
+■■ Internal and External Requirements
+■■ Data Classification and Categorization
+àà Data Ownership
+-- Data Owner
+-- Data Custodian
+àà Labeling
+-- Sensitivity
+-- Impact
+àà Types of Data
+-- Structured
+-- Unstructured
+àà Data Life-Cycle
+-- Generation
+-- Retention
+-- Disposal
+■■ Functional Requirements
+àà Role and User Definitions (Who)
+àà Deployment Environments (Where)
+àà Object (What)
+àà Activities/Actions (How)
+àà Sequencing and Timing (When)
+■■ Operational Requirements
+àà How Software is:
+-- Deployed
+-- Operated
+-- Managed
+
+objectives
+■■ Understand the concepts and elements of what constitutes
+secure software.
+■■ Be familiar with the principles of risk management as it
+pertains to software development.
+■■ Know how to apply information security concepts to
+software development.
+■■ Know the various design aspects that need to be taken into
+consideration to architect hack resilient software.
+■■ Understand how policies, standards, methodologies,
+frameworks and best practices interplay in the
+development of secure software.
+■■ Be familiar with regulatory, privacy, and compliance
+requirements for software and the potential repercussions
+of non-compliance.
+■■ Understand security models and how they can be used to
+architect hacker proof software.
+■■ Know what trusted computing is and be familiar with
+mechanisms and related concepts of trusted computing.
+■■ Understand security issues that need to be considered
+when purchasing or acquiring software.
+
+__安全需求的源头__
+内部需求（policy，standard，guideline, sop， business functional）
+外部需求（regulations, compliance, geographical）
+
+__安全需求类型__
+■■ Core Security Requirements
+¤¤ Confidentiality requirements
+CONTROL INCL.
+- Secret Writing
+  - Overt
+    - encryption
+    - hashing
+  - Covert
+    - Steganography(隐写术)
+    - Digital Watermarking(数字水印)
+- Masking
+
+user cases
+- transit
+- processing
+- storage
+
+¤¤ Integrity requirements
+¤¤ Availability requirements
+¤¤ Authentication requirements
+¤¤ Authorization requirements
+¤¤ Accountability requirements
+■■ General Requirements
+¤¤ Session Management requirements
+¤¤ Errors & Exceptions Management requirements
+¤¤ Configuration Parameters Management requirements
+■■ Operational Requirements
+¤¤ Deployment Environment requirements
+¤¤ Archiving requirements
+¤¤ Anti-piracy requirements
+■■ Other Requirements
+¤¤ Sequencing and Timing requirements
+¤¤ International requirements
+¤¤ Procurement requirements
